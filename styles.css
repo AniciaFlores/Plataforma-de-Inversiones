@@ -170,10 +170,11 @@ nav {
 
 .email-input {
   width: 208px;
-  height: 36px;
+  height: 37px;
   padding: 10px;
   font-size: 16px;
   background-color: transparent; 
+  border: 1px solid #7C7C88; 
 }
 
 /* Estilos para el botón de envío */
