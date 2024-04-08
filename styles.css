@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
-*{
+*,
+*::before
+*::after{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -87,10 +89,9 @@ nav {
     margin: 0;
   }
   
-  
+  /* Color de fondo al pasar el ratón por encima */
   a:hover {
-    background-color: #6366f1
-    ; /* Color de fondo al pasar el ratón por encima */
+    background-color: #6366f1; 
     border-radius: 8px;
   }
 
@@ -150,12 +151,6 @@ nav {
     margin-top: 0;
 }
 
-
-/* Estilo para el botón cuando se pasa el ratón por encima */ 
-.footer-column button:hover {
-  background-color: #6366f1;
-} 
-
 /* Estilos para el formulario */
 .move-left {
   margin-left: -100px;
@@ -168,24 +163,23 @@ nav {
 }
 
 /* Estilos para el cuadro de input de email */
-
 .moveCuadro-left{
   margin-left: -142px;
   margin-top: 8px;
 }
 
 .email-input {
-  width: 226px;
-  height: 56px;
+  width: 208px;
+  height: 36px;
   padding: 10px;
   font-size: 16px;
+  background-color: transparent; 
 }
 
 /* Estilos para el botón de envío */
-
 .submit-button {
   width: 56px;
-  height: 56px;
+  height: 60px;
   background-color: #FFD015;
   border: none;
   border-radius: 3%;
@@ -194,16 +188,8 @@ nav {
   cursor: pointer;
 }
 
-/* Estilos para el ícono de flecha dentro del botón */
-.submit-button i {
-  color: #000; /* Color del ícono */
-  font-size: 20px;
-  line-height: 53px; /* Centra el ícono verticalmente */
-  margin-left: 3px; /* Ajusta el espacio entre el borde del botón y el ícono */
-}
+/* Estilo para el botón cuando se pasa el ratón por encima */ 
+.footer-column button:hover {
+  background-color: #6366f1;
+} 
 
-.arrow-icon {
-  font-size: 20px; /* Tamaño del icono */
-  color: #000; /* Color del ícono */
-  margin-left: 3px; /* Ajusta el espacio entre el borde del botón y el ícono */
-}
