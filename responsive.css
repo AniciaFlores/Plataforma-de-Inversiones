@@ -1,0 +1,42 @@
+/* Estilos para dispositivos con pantalla pequeña (móviles) */
+@media (max-width: 600px) {
+    .navbar {
+      /* estilos de la barra de navegación para móviles */
+    }
+  
+    .footer {
+      /* estilos del pie de página para móviles */
+    }
+  }
+
+  /* Estilos para dispositivos con pantalla mediana (tabletas) */
+  @media (min-width: 601px) and (max-width: 1024px) {
+    nav ul {
+      display: flex;
+      justify-content: space-between; /* Distribuye los elementos uniformemente */
+      padding: 0; /* Quita el relleno */
+    }
+    
+    nav ul li.logo {
+      order: 2; /* Mueve el logo al final de la lista */
+      margin-left: auto; /* Alinea el logo a la derecha */
+      margin-right: auto; /* Alinea el logo a la izquierda */
+    }
+    
+    nav ul li {
+      flex: 1; /* Hace que los elementos ocupen un espacio igual */
+    }
+    
+    nav ul li:nth-child(5) {
+      display: none; /* Oculta el quinto elemento (Acerca de) */
+    }
+  
+    nav ul li a {
+      display: block;
+      padding: 10px 15px;
+      border-radius: 5px;
+      font-size: 16px; /* Tamaño de fuente */
+    }
+  }
+  
+  
