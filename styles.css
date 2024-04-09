@@ -97,7 +97,7 @@ nav {
 
 /* Estilos del footer*/
   footer {
-    position: absolute;
+    position: relative;
     bottom: 0;
     width: 100%;
     background-color: #18181B ;
@@ -152,19 +152,18 @@ nav {
 }
 
 /* Estilos para el formulario */
-.move-left {
-  margin-left: -100px;
-}
-
 .formulario {
   display: flex;
   align-items: center;
   justify-content: center;
 }
+.move-left {
+  margin-left: -100px;
+}
 
 /* Estilos para el cuadro de input de email */
 .moveCuadro-left{
-  margin-left: -133px;
+  margin-left: -90px;
   margin-top: 8px;
 }
 
