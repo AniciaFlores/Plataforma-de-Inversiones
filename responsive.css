@@ -9,13 +9,13 @@
     }
   }
 
-  /* Estilos para dispositivos con pantalla mediana (tabletas) */
+  /* Nav Tablet */
   @media (min-width: 601px) and (max-width: 1024px) {
     .container{
       max-width:700px ;
       margin: 0 auto;
     }
-  /*Estilos del nav */
+ 
     nav {
       font-size: 1.2em; /* Cambia el tamaño de fuente para Tablet */
    }
@@ -48,55 +48,7 @@
     }
   }
   
-  /* Footer, estilos en tablet */
-  @media only screen and (max-width: 768px) {
-    footer {
-      width: 100%;
-      padding: 20px 0;
-    }
-  
-    .footer-content {
-      flex-wrap: wrap;
-    }
-  
-    .footer-column {
-      flex-basis: calc(25% - 15px);
-      margin-bottom: 20px;
-    }
-
-    .redes {
-      order: 3; /* Mueve la columna "Redes" dos espacios a la derecha */
-    }
-
-  /* Estilos para el formulario */
-    .move-left {
-      margin-left: -30px;
-    }
-  /*Estilos input de email*/
-    .email-input {
-      width: 80%;
-      max-width: 250px;
-      height: 61px;
-      padding: 10px;
-      margin-left: -0px;
-      font-size: 14px;
-      background-color: transparent;
-      border: 1px solid #7C7C88;
-      box-sizing: border-box;
-    }
-  
-    .submit-button {
-      width: 25%;
-      max-width: 100px;
-      height: 60px;
-      background-color: #FFD015;
-      border: none;
-      border-radius: 3%;
-      margin-top: 8px;
-      cursor: pointer;
-    }
-  }
-
+  /* Footer Tablet */
   @media (min-width: 1024px) and (max-width: 1200px) {
     footer {
       width: 100%;
@@ -144,4 +96,50 @@
     }
   
   }
+  
+/* Footer Tablet 768px */
+  @media only screen and (max-width: 768px) {
+    footer {
+      width: 100%;
+      padding: 20px 0;
+    }
+  
+    .footer-content {
+      flex-wrap: wrap;
+    }
+  
+    .footer-column {
+      flex-basis: calc(25% - 15px);
+      margin-bottom: 20px;
+    }
+
+  /* Estilos para el formulario */
+    .move-left {
+      margin-left: -30px;
+    }
+  /*Estilos input de email*/
+    .email-input {
+      width: 80%;
+      max-width: 250px;
+      height: 61px;
+      padding: 10px;
+      margin-left: -0px;
+      font-size: 14px;
+      background-color: transparent;
+      border: 1px solid #7C7C88;
+      box-sizing: border-box;
+    }
+  
+    .submit-button {
+      width: 25%;
+      max-width: 100px;
+      height: 60px;
+      background-color: #FFD015;
+      border: none;
+      border-radius: 3%;
+      margin-top: 8px;
+      cursor: pointer;
+    }
+  }
+
   
