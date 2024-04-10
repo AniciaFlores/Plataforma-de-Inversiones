@@ -70,9 +70,11 @@ p {
     color: #B7B7C7;
 }
 
+/* Estilos para el nav-bar */
 nav {
-    background-color: #18181B; /* Color de fondo de la barra de navegación */
-  }
+  background-color: #18181B; /* Color de fondo, barra de navegación */
+  font-size: 1.4em; /* Tamaño-fuente predeterminado para Desktop */
+}
   
   ul {
     margin: 0;
@@ -85,11 +87,20 @@ nav {
     margin: 0 10px;
   }
   
+/* Logo */
   li.logo {
     margin: 0;
   }
+
+  .bi-brightness-high {
+    color: #FFD015; 
+  }
   
-  /* Color de fondo al pasar el ratón por encima */
+  .logo a {
+    color: #6366f1; 
+  }
+  
+/* Color de los botones al pasar el ratón por encima */
   a:hover {
     background-color: #6366f1; 
     border-radius: 8px;
@@ -188,7 +199,6 @@ nav {
   cursor: pointer;
 }
 
-/* Estilo para el botón cuando se pasa el ratón por encima */ 
 .footer-column button:hover {
   background-color: #6366f1;
 } 

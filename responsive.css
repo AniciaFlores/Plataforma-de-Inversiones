@@ -1,8 +1,8 @@
 /* Estilos para dispositivos con pantalla pequeña (móviles) */
 @media (max-width: 600px) {
-    .navbar {
-      /* estilos de la barra de navegación para móviles */
-    }
+  nav {
+    font-size: 1em; /* Cambia el tamaño de fuente para Tablet */
+}
   
     .footer {
       /* estilos del pie de página para móviles */
@@ -15,6 +15,11 @@
       max-width:700px ;
       margin: 0 auto;
     }
+  /*Estilos del nav */
+    nav {
+      font-size: 1.2em; /* Cambia el tamaño de fuente para Tablet */
+   }
+
     nav ul {
       display: flex;
       justify-content: space-between; /* Distribuye los elementos uniformemente */
@@ -22,8 +27,8 @@
     }
     
     nav ul li.logo {
-      order: 2; /* Mueve el logo al final de la lista */
-      margin-left: auto; /* Alinea el logo a la derecha */
+      flex-direction: row;
+      /*order: 2; /* Mueve el logo al final de la lista */
       margin-right: auto; /* Alinea el logo a la izquierda */
     }
     
@@ -43,8 +48,8 @@
     }
   }
   
+  /* Footer, estilos en tablet */
   @media only screen and (max-width: 768px) {
-    /* Footer, estilos en tablet */
     footer {
       width: 100%;
       padding: 20px 0;
@@ -57,6 +62,10 @@
     .footer-column {
       flex-basis: calc(25% - 15px);
       margin-bottom: 20px;
+    }
+
+    .redes {
+      order: 3; /* Mueve la columna "Redes" dos espacios a la derecha */
     }
 
   /* Estilos para el formulario */
@@ -89,14 +98,29 @@
   }
 
   @media (min-width: 1024px) and (max-width: 1200px) {
+    footer {
+      width: 100%;
+      padding: 20px 0;
+    }
+  
+    .footer-content {
+      flex-wrap: wrap;
+    }
+  
     .footer-column {
-      flex-basis: calc(25% - 20px); 
+      flex-basis: calc(25% - 15px);
       margin-bottom: 20px;
     }
-    /* Estilos para el formulario */
+
+    .redes {
+      margin-left: 2em; /* Ajusta este valor a lo que necesites */
+    }
+
+  /* Estilos para el formulario */
     .move-left {
       margin-left: 8px;
     }
+
   /*Estilos input de email*/
     .email-input {
       max-width: 170px;
