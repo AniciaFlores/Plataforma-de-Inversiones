@@ -1,14 +1,3 @@
-/* Estilos para dispositivos con pantalla pequeña (móviles) */
-@media (max-width: 600px) {
-  nav {
-    font-size: 1em; /* Cambia el tamaño de fuente para Tablet */
-}
-  
-    .footer {
-      /* estilos del pie de página para móviles */
-    }
-  }
-
   /* Nav Tablet */
   @media (min-width: 601px) and (max-width: 1024px) {
     .container{
@@ -20,16 +9,24 @@
       font-size: 1.2em; /* Cambia el tamaño de fuente para Tablet */
    }
 
+    .test-desktop{
+      display: none;
+    }
+  
+    .acerca-de-tablet{
+      display: none;
+    }
+
     nav ul {
       display: flex;
       justify-content: space-between; /* Distribuye los elementos uniformemente */
       padding: 0; /* Quita el relleno */
     }
-    
+
+    /* Logo para Tablet */    
     nav ul li.logo {
       flex-direction: row;
-      /*order: 2; /* Mueve el logo al final de la lista */
-      margin-right: auto; /* Alinea el logo a la izquierda */
+      margin: 0 20px; /* Ajusta el margen del logo en la versión tablet */
     }
     
     nav ul li {
@@ -142,4 +139,16 @@
     }
   }
 
-  
+
+/* Muestra el ícono de hamburguesa en pantallas pequeñas */
+@media screen and (max-width: 768px) {
+
+  nav {
+    font-size: 1em; 
+  }
+  .burger-icon {
+    display: block;
+  }
+}
+
+

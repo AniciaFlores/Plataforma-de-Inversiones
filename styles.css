@@ -95,15 +95,23 @@ nav {
   .bi-brightness-high {
     color: #FFD015; 
   }
+
+  nav ul li.logo span {
+    display: flex; /* Hace que el ícono y el texto se muestren en línea */
+    align-items: center; /* Alinea verticalmente el ícono y el texto */
+  }
   
-  .logo a {
-    color: #6366f1; 
+  nav ul li.logo span i {
+    margin-right: 5px; /* Ajusta el espacio entre el ícono y el texto */
   }
   
 /* Color de los botones al pasar el ratón por encima */
   a:hover {
     background-color: #6366f1; 
     border-radius: 8px;
+  }
+  .test-tablet{
+    display: none;
   }
 
 /* Estilos del footer*/
