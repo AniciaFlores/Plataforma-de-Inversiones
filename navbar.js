@@ -1,3 +1,8 @@
-document.querySelector('.burger-icon').addEventListener('click', function() {
-    document.querySelector('nav ul').classList.toggle('show');
+document.addEventListener('DOMContentLoaded', function () {
+  const menuToggle = document.querySelector('.menu-toggle');
+  const navMenu = document.querySelector('nav ul');
+
+  menuToggle.addEventListener('click', function () {
+    navMenu.classList.toggle('show');
   });
+});

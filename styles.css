@@ -75,11 +75,15 @@ nav {
   background-color: #18181B; /* Color de fondo, barra de navegación */
   font-size: 1.4em; /* Tamaño-fuente predeterminado para Desktop */
 }
-  
+ 
   ul {
     margin: 0;
     padding: 0;
     text-align: center;
+  }
+
+  .menu-toggle {
+    display: none;
   }
   
   li {
